@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoctorCare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    <nav id="navigation">
+        <div class="wrapper">
+            <a class="logo" onclick="closeMenu()" href="#home">Doctor<span class="logo">Care</span></a>
+            <button 
+            aria-expanded="false"
+            aria-label="Abrir menu"
+            onclick="openMenu()" class="open-menu"><img src="./assets/icons/menu.svg" alt="Botão abrir menu"></button>
+            <button 
+            aria-expanded="'true"
+            aria-label="Fechar menu"
+            onclick="closeMenu()" class="close-menu"><img src="./assets/icons/close.svg" alt="Botão fechar"></button>
+            
+            <div class="menu">
+                <ul>
+                    <li><a onclick="closeMenu()" href="#home">Início</a></li>
+                    <li><a onclick="closeMenu()" href="#services">Serviços</a></li>
+                    <li><a onclick="closeMenu()" href="#about">Sobre</a></li>
+                </ul>      
+                <a href="#contact" onclick="closeMenu()"><button class="secondary-button">Agendar consulta</button></a>
+                
+                <ul class="social-links">
+                    <li><a class="insta" target="_blank" href="https://www.instagram.com/programae.do/"
+                        ><svg
+                        width="30"
+                        height="30"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        >
+                        <path
+                            d="M17 1.99997H7C4.23858 1.99997 2 4.23855 2 6.99997V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V6.99997C22 4.23855 19.7614 1.99997 17 1.99997Z"
+                            stroke="#000000"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                        <path
+                            d="M15.9997 11.3701C16.1231 12.2023 15.981 13.0523 15.5935 13.7991C15.206 14.5459 14.5929 15.1515 13.8413 15.5297C13.0898 15.908 12.2382 16.0397 11.4075 15.906C10.5768 15.7723 9.80947 15.3801 9.21455 14.7852C8.61962 14.1903 8.22744 13.4229 8.09377 12.5923C7.96011 11.7616 8.09177 10.91 8.47003 10.1584C8.84829 9.40691 9.45389 8.7938 10.2007 8.4063C10.9475 8.0188 11.7975 7.87665 12.6297 8.00006C13.4786 8.12594 14.2646 8.52152 14.8714 9.12836C15.4782 9.73521 15.8738 10.5211 15.9997 11.3701Z"
+                            stroke="#000000"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                        <path
+                            d="M17.5 6.49997H17.51"
+                            stroke="#000000"
+                            stroke-width=""
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                        </svg>
+                    </a></li>
+                    <li><a class="git" target="_blank" href="https://github.com/vanessamie">
+                        <svg
+                            height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="30" data-view-component="true" class="octicon octicon-mark-github v-align-middle">
+                            <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                        </svg>
+                    </a></li>
+                    <li><a class="linkedin" target="_blank" href="https://www.linkedin.com/in/vanessamie" >
+                        <svg xmlns="http://wwww3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="#000000" class="mercado-match" width="33" height="35" focusable="false">
+                        <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path></svg>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>    
+    
+    <section id="home">              
+        <div class="wrapper">
+            <div class="col-a">
+                <header>
+                    <h4>BOAS-VINDAS A DOCTORCARE 👋</h4>
+                    <h1>Assistência médica simplificada para todos</h1>
+                </header>
+                
+                <div class="content">
+                    <p>Os médicos da DoctorCare vão além dos sintomas para tratar a causa raiz de sua doença e proporcionar uma cura a longo prazo.</p>
+                
+                    <a href="https://wa.me/5548911111111" target="_blank"><button class="primary-button"><img src="./assets/icons/whatsapp.svg" alt="icone whatsapp">Agende sua consulta</button></a>
+                </div>
+            </div>
+            
+            <div class="col-b">
+                <img class="img-woman" src="./assets/mulher-negra-com-blusa-verde-com-as-duas-maos-no-peito.png" alt="Mulher negra com blusa verde com as duas mãos no peito e sorrindo">
+            </div>
+
+            <div class="stats">
+                <div class="stat">
+                    <h3>+3.500</h3>
+                    <p>Pacientes atendidos</p>
+                </div>
+                <div class="stat">
+                    <h3>+15</h3>
+                    <p>Especialistas disponíveis</p>
+                </div>
+                <div class="stat">
+                    <h3>+10</h3>
+                    <p>Anos no mercado</p>
+                </div>
+            </div>
+        
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="wrapper">
+            <header>
+                <h4>Serviços</h4>
+                <h2>Como podemos ajudá-lo a se sentir melhor?</h2>
+            </header>
+            
+            <div class="content">
+                <div class="cards">
+                    <div class="card">
+                        <img src="./assets/icons/check.svg" alt="icone check">
+                        <h3>Problemas digestivos</h3>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+                    </div>
+                
+                    <div class="card">
+                        <img src="./assets/icons/check.svg" alt="icone check">
+                        <h3>Saúde Hormonal</h3>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+                    </div>
+                
+                    <div class="card">
+                        <img src="./assets/icons/check.svg" alt="icone check">
+                        <h3>Bem-estar mental </h3>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/icons/check.svg" alt="icone check">
+                        <h3>Cuidados Pediátricos</h3>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/icons/check.svg" alt="icone check">
+                        <h3>Autoimune e Inflamação</h3>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/icons/check.svg" alt="icone check">
+                        <h3>Saúde do Coração</h3>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="wrapper">
+            <div class="col-a">
+                <header>
+                    <h4>Sobre nós</h4>
+                    <h2>Entenda quem somos e por que existimos</h2>
+                </header>
+                
+                <div class="content">
+                    <p> Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="col-b">
+                <img class="img-pattern" src="./assets/happy-doctor-holding-a-clipboard-with-patients.png" alt="Doutor feliz segurando prancheta com pacientes">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="wrapper">
+            <div class="col-a">
+                <header>
+                    <h2>Entre em contato conosco!</h2>
+                </header>
+                <div class="content">
+                    <ul>
+                        <li><img src="./assets/icons/map-pin.svg" alt="Icone mapa"> R. Amauri Souza, 346</li>
+                        <li><img src="./assets/icons/mail.svg" alt="Icone e-mail"> contato@doctorcare.com</li>
+                    </ul>
+                    <a href="https://wa.me/5548911111111" target="_blank"><button class="primary-button"><img src="./assets/icons/whatsapp.svg" alt="icone whatsapp">Agende sua consulta</button></a>
+                </div>
+            </div>
+
+            <div class="col-b">
+                <img class="img-pattern" src="./assets/homem-negro-sorrindo-usando-celular.png" alt="Homem negro de óculos com moletom bege mexendo no celular e sorrindo">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="wrapper">
+            <div class="col-a">
+                <a class="logo" href="#home">Doctor<span class="logo">Care</span></a>
+                <p>
+                    ©2022 Desenvolvido por Vanessa Mie Nishida <br>
+                    Todos os direitos reservados.
+                </p>
+            </div>
+
+            <div class="col-b">
+                <ul class="social-links">
+                    <li><a class="insta" target="_blank" href="https://www.instagram.com/programae.do/"
+                        ><svg
+                        width="30"
+                        height="30"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        >
+                        <path
+                            d="M17 1.99997H7C4.23858 1.99997 2 4.23855 2 6.99997V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V6.99997C22 4.23855 19.7614 1.99997 17 1.99997Z"
+                            stroke="#000000"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                        <path
+                            d="M15.9997 11.3701C16.1231 12.2023 15.981 13.0523 15.5935 13.7991C15.206 14.5459 14.5929 15.1515 13.8413 15.5297C13.0898 15.908 12.2382 16.0397 11.4075 15.906C10.5768 15.7723 9.80947 15.3801 9.21455 14.7852C8.61962 14.1903 8.22744 13.4229 8.09377 12.5923C7.96011 11.7616 8.09177 10.91 8.47003 10.1584C8.84829 9.40691 9.45389 8.7938 10.2007 8.4063C10.9475 8.0188 11.7975 7.87665 12.6297 8.00006C13.4786 8.12594 14.2646 8.52152 14.8714 9.12836C15.4782 9.73521 15.8738 10.5211 15.9997 11.3701Z"
+                            stroke="#000000"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                        <path
+                            d="M17.5 6.49997H17.51"
+                            stroke="#000000"
+                            stroke-width=""
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                        </svg>
+                    </a></li>
+                    <li><a class="git" target="_blank" href="https://github.com/vanessamie">
+                        <svg
+                            height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="30" data-view-component="true" class="octicon octicon-mark-github v-align-middle">
+                            <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                        </svg>
+                    </a></li>
+                    <li><a class="linkedin" target="_blank" href="https://www.linkedin.com/in/vanessamie" >
+                        <svg xmlns="http://wwww3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="#000000" class="mercado-match" width="33" height="35" focusable="false">
+                        <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path></svg>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <a id="backToTopButton" href="#home"><img src="./assets/icons/group 33.svg" alt="Botão topo"></a>
+    
+    <!--Biblioteca ScrollReaveal-->
+
+    <script src="main.js"></script>
+</body>
+</html>
