@@ -76,3 +76,5 @@ https://vanessamie.github.io/nlw-origin
 
 ######  Agradecimento à Rocketseat por proporcionar esta semana de aprendizado! Agradecimento especial ao Mayk Brito por todo o conhecimento que adquiri! E também a Thamires Santos e a toda comunidade do Discord que ajudou muito nas minhas dúvidas e em encontrar e corrigir meus erros!
 
+
+P.s.: O smooth não está funcionando direito, se souberem como arrumar, eu agradeço... e eu percebi que dependendo do monitor o cálculo das cores dá errado e ele fica mais pra cima do que o desejado, se souberem como consertar, também agradeço!
